@@ -1,0 +1,1 @@
+为 Agent Skill 准备单技能发布包、平台简介与完整概述，覆盖 GitHub、skills.sh、腾讯 SkillHub、SkillHub.club、Skillstore、ClawHub、Agensi 和 VoltAgent，分别核验接收、审核、公开版本、下载内容及页面介绍。1.2.3 补齐 MIT 许可，沿用 1.2.2 的介绍同步流程。
