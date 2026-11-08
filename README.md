@@ -4,6 +4,8 @@
 
 这是发布指导，没有自动向所有市场上传的运行脚本。代理按用户选择的平台、已有工具和授权执行。
 
+1.2.3 已在 [GitHub Release](https://github.com/hunxuankai/skill-publishing-guide/releases/tag/v1.2.3)、[skills.sh](https://www.skills.sh/hunxuankai/skill-publishing-guide/skill-publishing-guide) 和 [ClawHub](https://clawhub.ai/hunxuankai/skill-publishing-guide) 公开；腾讯 SkillHub、SkillHub.club、Skillstore 和 Agensi 已提交待审。安全评估警告、文件核对和未完成项见 [发布结果](docs/publications/2026-11-08-v1.2.3-results.md)。VoltAgent 的真实社区使用门槛尚未满足。
+
 ## 平台、提交方式与核验范围
 
 目前覆盖 8 个渠道。腾讯 skillhub.cn 的概述机制、发布/更新与编辑入口，以及 Agensi、SkillHub.club 的实际网页表单于 **2026-11-08** 核对；其他渠道、腾讯此前文件过滤及既有 CLI 本地运行依据保留 **2026-11-07** 的核验记录。下表区分文档、界面和本地运行，不代表已逐个平台完成真实发布测试。
@@ -26,6 +28,14 @@
 ## 源码与使用
 
 唯一安装单元是 [skills/skill-publishing-guide](skills/skill-publishing-guide/SKILL.md)。主入口和参考页以中文编写，按所选平台加载；既有授权、语言、许可和发布范围优先。
+
+可下载 Release 的单技能 ZIP；也可用本轮核对的 CLI 版本从公开仓库安装指定技能：
+
+```powershell
+npx --yes skills@1.7.6 add hunxuankai/skill-publishing-guide --skill skill-publishing-guide --agent codex --copy
+```
+
+此命令读取当前 main；需要不可变的 1.2.3 文件时使用 Release 附件及其来源/哈希记录。
 
 示例请求：
 
